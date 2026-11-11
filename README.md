@@ -259,20 +259,8 @@ Mongo/HBase still load representative subsets via `MONGO_LOAD_LIMITS` / `HBASE_L
 
 ---
 
-## 7. How to present (short)
 
-1. Show architecture diagram (Mongo vs HBase vs Spark).  
-2. Justify schemas from `schema_design.md` files.  
-3. Live or recorded: one Mongo aggregation + one HBase user scan.  
-4. Show Spark recommendation pairs + SQL join across “Mongo” and “HBase” views.  
-5. Walk funnel + CLV insights with the 4 charts.  
-6. Close with scalability + limitations from the report.
-
-Full script: `07_report/PRESENTATION_GUIDE.md`.
-
----
-
-## 8. Common issues
+## 7. Common issues
 
 | Problem | Fix |
 |---|---|
