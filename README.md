@@ -2,7 +2,7 @@
 
 **Distributed Multi-Model Analytics for E-commerce Data**  
 Technologies: **MongoDB** + **HBase** + **Apache Spark**  
-Due: **11:59am, 11-11-2026** (individual project)
+Due: **11-11-2026** (individual project)
 
 This repository is a complete, runnable implementation of all four required parts, plus a technical report draft and presentation guide.
 
@@ -67,7 +67,7 @@ finalproject/
 │   └── create_visualizations.py
 ├── 07_report/
 │   ├── Technical_Report.md
-│   └── PRESENTATION_GUIDE.md
+│   
 ├── scripts/
 │   └── run_pipeline.py
 ├── data/                          # generated JSON (gitignored)
