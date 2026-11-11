@@ -1,0 +1,11 @@
+faker>=24.0.0
+pandas>=2.0.0
+numpy>=1.24.0
+pymongo>=4.6.0
+pyspark==3.5.1
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.18.0
+happybase>=1.2.0
+thrift>=0.16.0
+pypdf>=4.0.0

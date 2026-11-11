@@ -1,0 +1,40 @@
+# Docker services for Part 1 (MongoDB + HBase)
+# Start:  docker compose up -d
+# Stop:   docker compose down
+#
+# MongoDB: localhost:27017
+# HBase Master UI: http://localhost:16010
+# HBase Thrift (HappyBase): localhost:9090
+
+services:
+  mongo:
+    image: mongo:7
+    container_name: auca_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  hbase:
+    image: harisekhon/hbase:latest
+    container_name: auca_hbase
+    ports:
+      - "2181:2181"
+      # Avoid host 8080 conflicts (often used by other local apps)
+      - "8088:8080"
+      - "8085:8085"
+      - "9090:9090"
+      - "9095:9095"
+      - "16000:16000"
+      - "16010:16010"
+      - "16201:16201"
+      - "16301:16301"
+    # First boot can take 1–2 minutes before Thrift accepts connections
+
+volumes:
+  mongo_data:
