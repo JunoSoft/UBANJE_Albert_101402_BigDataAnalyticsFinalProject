@@ -151,6 +151,12 @@ Results:
 
 Read the design rationale in `02_mongodb/schema_design.md`.
 
+#### MongoDB Compass view
+
+`ecommerce_analytics` database with collections `categories`, `products`, `sessions`, `transactions`, and `users` (sessions shown below — 15K documents):
+
+![MongoDB Compass - sessions collection](docs/images/mongodb_compass_sessions.png)
+
 ---
 
 ### STEP D — Part 1: HBase
